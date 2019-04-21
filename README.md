@@ -2,7 +2,7 @@
 
 ## TL;DR: This project is a Google Apps Script written in JavaScript to use the Stripe API to pull a Stripe invoice into a premade Google Sheet invoice template. 
 
-*Note: There is separate code for net-new billing cycles, and invoices generated in the middle of existing billing cycles, such as adding a user in the middle of a yearly billing cycle.*
+*Note: There is separate code for invoices generated at the beginning of a billing cycle (such as a user's monthly payment), and invoices generated in the middle of existing billing cycles (such as adding a user in the middle of a yearly billing cycle).*
 
 ## How To Use:
 
@@ -18,19 +18,19 @@
 
 6. In the URL section, grab the unique invoice ID
 
-7. Open up the Google Sheet's Script Editor page and paste the invoice ID in the section in the URL section of the script. This is roughly on 23 of the code **Note: Only update the section of the URL after _/invoices/_**
+7. Open up the Google Sheet's Script Editor page and paste the invoice ID in the section in the URL section of the script. This is roughly on 23 of the code.  **Note: Only update the section of the URL after _/invoices/_**
 
 8. Go back to the Google Sheet (the actual Sheet) and make sure you have *"Raw API Data"* selected as the active tab.
 
 9. Click *"Stripe"* in the menu bar, then *"Retreive Invoice Data"*.
 
-10. The script will fill out the data from the invoice you selected in the *"Raw API Data"* tab. **Do Not Edit This Data Manually** You will see rows in this tab that have the raw data from the API and other rows have the converted data (ex: Converting epoch/UNIX time to standard MM/DD/YYYY date format).
+10. The script will fill out the data from the invoice you selected in the *"Raw API Data"* tab. **Do Not Edit This Data Manually.** You will see rows in this tab that have the raw data from the API and other rows have the converted data (ex: Converting epoch/UNIX time to standard MM/DD/YYYY date format).
 
 11. After the script runs, the *"Raw API Data"* converted data will automatically update the second tab called *"Invoice"*. You can click the *"Invoice"* tab to confirm.
 
 12. **Important! - This project is still under "code review", meaning it's not 100% foolproof yet. There's still a potential for bugs. Be sure after running the script to match up your invoice in the Sheet with the invoice in Stripe and make sure the data matches**
 
-13. Once you confirm the data is correct, you can fill out the remaining customer data, such as their billing address, VAT, etc. You will need to do this by hand.
+13. Once you confirm the data is correct you can fill out the remaining customer data, such as their billing address, VAT, etc. You will need to do this by hand.
 
 14. Once the invoice is completed, go to File > Download As > PDF to export the Sheet to a PDF for the customer.
 
@@ -44,6 +44,6 @@
 
 4. This should add the *"Stripe"* menu bar to the Google Sheet.
 
-**Note: You will need to click back on "getInvoiceObj" in the Script Editor before running the invoice script.**
+**Note: You will need to click back on "_getInvoiceObj_" in the Script Editor before running the invoice script.**
 
 ### If all else fails ask the program's developer! (•‿•)
