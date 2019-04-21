@@ -2,7 +2,8 @@
 
 ## Tl;DR: This project is a Google Apps Script written in JavaScript to access the Stripe API inside of Google Sheets.
 ### The goal is to retrieve billing data from a Stripe invoice from the Stripe API and import it into a premade Google Sheet invoice template. 
-####Guide for Invoices from New Billing Cycles
+
+## How To Use:
 
 1. Open up the invoice template within Google Sheets
 
