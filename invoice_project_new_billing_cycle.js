@@ -105,17 +105,13 @@ function getInvoiceObj()
     sheet.getRange(23,2).setValue([content.charge.paid]);
     
       /*       Team Discount
-    Notes:
     
-    1. This seems to be the Team's current discount, not the discount at the time of the invoice
-    2. If the team has no discount, when running the script you'll see a "TypeError" error message,
-       which just means the value for discount in the API code equals "null".
-    3. If you receive this error, the script will stop running at this point and you will need to manually
-       remove the old discount from the Sheet if one is left there.
+    Notes:  This seems to be the Team's current discount, not the discount at the time of the invoice
+
     */
-    sheet.getRange(21,2).setValue([content.customer.subscriptions.data[0].discount.coupon.percent_off]);
+ 
+    sheet.getRange(21,2).setValue([content.discount===null?0:content.discount.coupon.percent_off]);
     
-  
     
     //**Logs for testing**
     //Logger.log("Yes, this was logged!");
