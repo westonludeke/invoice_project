@@ -1,20 +1,22 @@
 /*
 
-This code adds the ability to export the invoice as a PDF and sends as an email.
+This code adds the ability to export the invoice as a PDF and sends as an email. 
+It will also save a copy of the PDF to a specific folder within Google Drive.
 
-1. If you don't see the "Email PDF" button inside of the Google Sheet template, run the "onOpenTwo" function first.
+1. If you don't see the "Email and Save" button inside of the Google Sheet template, run the "onOpenTwo" function first.
 
-2. To run, from inside the Google Sheet click "Email PDF", then click "Export and Email Invoice".
+2. To run, from inside the Google Sheet click "Email and Save", then click "Email Invoice and Save Copy".
 
-3. This will export the file to a PDF and email it to the email address included in the code below.
+3. This will export only the Invoice tab within the Sheet to a PDF and email it to the email address included in the code below.
+   It will then save a copy of the PDF to the designated Google Drive folder in the code below.
 
 */
 
 //Code to add the buttons to the Google Sheet
 function onOpenTwo() {
   var ui = SpreadsheetApp.getUi();
-  ui.createMenu('Email PDF')
-    .addItem('Export and Email Invoice','emailSpreadsheetAsPDF')
+  ui.createMenu('Email and Save')
+    .addItem('Email Invoice and Save Copy','emailSpreadsheetAsPDF')
     .addToUi();
 }
 
