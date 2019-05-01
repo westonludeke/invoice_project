@@ -1,6 +1,6 @@
 # Project: Generate Custom Invoices from Stripe in Google Sheets
 
-## What This Is: This project contains two Google Apps Scripts written in JavaScript. The first script retrieves an invoice from Stripe via the Stripe API and populates the data into premade Google Sheet invoice template. The second script saves the invoice from Sheets to a PDF and sends an email to a designated recipient, while at the same time saving the PDF of the invoice in a designated Google Drive folder.
+**What This Is**: This project contains two Google Apps Scripts written in JavaScript. The first script retrieves an invoice from Stripe via the Stripe API and populates the data into premade Google Sheet invoice template. The second script saves the invoice from Sheets to a PDF and sends an email to a designated recipient, while at the same time saving the PDF of the invoice in a designated Google Drive folder.
 
 ## Script to Retreive Invoice Data From Stripe
 
