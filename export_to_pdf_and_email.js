@@ -56,6 +56,20 @@ function emailSpreadsheetAsPDF() {
         'Authorization': 'Bearer ' +  token
       }
     }).getBlob().setName(sheet.getName() + ".pdf");
+
+  /* Code to download a copy of the invoice as a PDF and save to a specific folder within Google Drive */
+
+  //Adds PDF copy of the invoice to the root Drive directory
+  var createPDF = DriveApp.createFile(response).getId();
+  
+  //Grabs a specific Drive folder
+  var driveFolder = DriveApp.getFolderById("xxxxxxxxxxxxxxxxxxxxxxxxx");
+  
+  //Grabs the PDF
+  var file = DriveApp.getFileById(createPDF);
+  
+  //Moves the PDF to the specified directory
+  var moveFile = driveFolder.addFile(file);
      
   // If allowed to send emails, send the email with the PDF attachment
   if (MailApp.getRemainingDailyQuota() > 0) 
