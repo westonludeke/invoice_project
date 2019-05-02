@@ -1,4 +1,4 @@
-# Project: Generate Custom Invoices from Stripe in Google Sheets. Then Email as PDF and also Save PDF to Google Drive.
+# Project: Generate Custom Invoices from Stripe in Google Sheets. Then Email as PDF & Save PDF to Google Drive.
 
 **What This Is**: This project contains two Google Apps Scripts written in JavaScript. The first script retrieves an invoice from Stripe via the Stripe API and populates the data into a premade Google Sheet invoice template. The second script saves the invoice from Sheets to a PDF and sends an email with the PDF attached to a designated recipient, while at the same time saving a copy of the PDF of the invoice in a pre-designated Google Drive folder.
 
