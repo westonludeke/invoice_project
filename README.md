@@ -1,10 +1,10 @@
 # Project: Generate Custom Invoices from Stripe in Google Sheets
 
-**What This Is**: This project contains two Google Apps Scripts written in JavaScript. The first script retrieves an invoice from Stripe via the Stripe API and populates the data into premade Google Sheet invoice template. The second script saves the invoice from Sheets to a PDF and sends an email to a designated recipient, while at the same time saving the PDF of the invoice in a designated Google Drive folder.
+**What This Is**: This project contains two Google Apps Scripts written in JavaScript. The first script retrieves an invoice from Stripe via the Stripe API and populates the data into a premade Google Sheet invoice template. The second script saves the invoice from Sheets to a PDF and sends an email with the PDF attached to a designated recipient, while at the same time saving a copy of the PDF of the invoice in a pre-designated Google Drive folder.
 
 ## Script to Retreive Invoice Data From Stripe
 
-*Note: There is separate code for invoices generated at the beginning of a billing cycle (such as a user's monthly payment), and invoices generated in the middle of existing billing cycles (such as adding a user in the middle of a yearly billing cycle).*
+**Note**: *There is separate code for invoices generated at the beginning of a billing cycle (such as a user's monthly payment), and invoices generated in the middle of existing billing cycles (such as adding a user in the middle of a yearly billing cycle).*
 
 ## How To Use:
 
@@ -18,7 +18,7 @@
 
 5. Go to Stripe and open up a paid invoice that you want to track.
 
-6. In the URL section, grab the unique invoice ID.
+6. In the URL section grab the unique invoice ID. This will look something like ```in_xxxxxxxxxxxxxxxxxxx```
 
 7. Open up the Google Sheet's Script Editor page and paste the invoice ID in the section in the URL section of the script.  **Note: Only update the section of the URL after _/invoices/_**
 
