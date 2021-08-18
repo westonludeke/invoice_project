@@ -10,9 +10,9 @@
 
 I have two articles on my blog that dive into more detail behind the history of this project. I discuss the initial problem that made me think of building a project and some of the early ideas I had before eventually deciding on building this tool. The articles can be read here:
 
-Part 1: [Using the Stripe API and a Google Apps Script to populate a Google Sheet invoice template](https://www.westonludeke.com/2019/04/29/using-the-stripe-api-and-a-google-apps-script-to-populate-a-google-sheet-invoice-template/)
+Part 1: [Using the Stripe API and a Google Apps Script to populate a Google Sheet invoice template](https://www.westonludeke.com/using-the-stripe-api-and-a-google-apps-script-to-populate-a-google-sheet-invoice-template/)
 
-Part 2: [Invoice Project: Export as PDF and email, while saving PDF to a specific Drive folder](https://www.westonludeke.com/2019/05/01/invoice-project-export-as-pdf-and-email-while-saving-pdf-to-a-specific-drive-folder/)
+Part 2: [Invoice Project: Export as PDF and email, while saving PDF to a specific Drive folder](https://www.westonludeke.com/invoice-project-export-as-pdf-and-email-while-saving-pdf-to-a-specific-drive-folder/)
 
 
 ## How To Use:
